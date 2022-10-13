@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+#titre {
+  color: #e6a80b;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  height: 30px;
+  font-size: 150%;
+}
+
+.texte-promo {
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 110%;
+}
+
+#sous-titre {
+  color: #e6a80b;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  height: 30px;
+  font-size: 120%;
+}
+
+.container1 {
+    display: grid;
+    grid-template: auto / repeat( 4, 1fr );
+    grid-gap: 2rem;
+    align-items: center;
+    justify-self: center;
+    margin: 20px auto  ;
+    max-width: 990px;
+    color: #131516;
+    
+    }
+
+  .texte-card {
+    text-align: center;
+    background: url('https://onclickwebdesign.com/wp-content/uploads/footer_bg_pattern.png') 0 0 repeat;
+    padding: 125px 0 105px;
+    padding: 5px 0;
+    color: #e6a80b;
+    font-size: 1.2em;
+    box-shadow: 0 0 0 2px #414040f6, 
+    0 0 20px #ffffff1e;
+    
+
+    
+}
+  .card {
+    height: 380px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #d2d2d22b, 
+      0 0 20px #0000002b;
+    font-family: monospace;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .card:hover {
+    box-shadow: 0 0 0 1px #ffd90079, 
+      0 0 20px #ffd0006e;
+  }
+  .card .back {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 8rem);
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    text-decoration: none;
+  }
+  .card .screen {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 3px 3px 0 0;
+    z-index: 1;
+  }
+  .card .video {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 3px 3px 0 0;
+    transition: all 0.2s;
+    opacity: 0;
+    z-index: 2;
+  }
+  .card .back:hover .video {
+    opacity: 1;  
+  }
+  .card .back h4 {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      z-index: 5;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      display: flex;
+      color: #ffffff00;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+  /*    background: radial-gradient( #0000, #000000d1 ); */
+      opacity: 0;
+      transition: all 0.2s;
+      text-shadow: 2px 2px 0px #00000000;
+  }
+  .card .back:hover h4 {
+    opacity: 1;
+  }
+  .card .description {
+    display: flex;
+    width: calc(100% - 1rem);
+    height: 3rem;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    z-index: 3;
+  }
+  .card .description h2 {
+    font-size: 1rem;
+  }
+  .card .description h2 a {
+      text-decoration: none;
+      color: rgb(167, 167, 167);
+  }
+  .card .description h2 a:hover {
+      color: #e6a80b;
+  }
+  .card .shop {
+    display: flex;
+    width: calc(100% - 2rem);
+    height: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: #e6a80b;
+    position: relative;
+  }
+  .card .shop button {
+    background: #e6a80b;
+    border: 0;
+    box-shadow: 0 0 0 3px #e6a80b;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .card .shop button:hover {
+    background: #e6a80b;;
+    color: #fff;
+  }
+  .shop span {
+      padding-left: 2px;
+  }
+  .card .shop:before {
+      content: '';
+      display: flex;
+      align-self: flex-start;
+      width: calc(100% - 2rem);
+      margin: 0 1rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1px;
+      background: #e6e6e6;
+  }
+  .card.first .screen {
+     background: url(../IMG/V1.png);
+    background-size: cover;
+    background-position: top;
+  }
+  .card.first .video {
+    background: url(../IMG/V12.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card.second .screen {
+     background: url(../IMG/V2.png);
+    background-size: cover;
+    background-position: top;
+  }
+  .card.second .video {
+    background: url(../IMG/V22.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card.third .screen {
+    background: url(../IMG/V3.png);
+    background-size: cover;
+    background-position: top;
+  }
+  .card.third .video {
+    background: url(../IMG/V32.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .card.four .screen {
+  background: url(../IMG/Sans_titre-1.png);
+  background-size: cover;
+  background-position: top;
+}
+.card.four .video {
+  background: url(../IMG/Sans_titre-1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card.five .screen {
+    background: url(https://m.media-amazon.com/images/I/51XnIkF7A4L._AC_SS450_.jpg);
+   background-size: cover;
+   background-position: top;
+ }
+.card.five .video {
+ background: url(https://solution-nuisible.fr/wp-content/uploads/2020/05/souris-nuisible.jpg) no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+
+.card.six .screen {
+  background: url(https://image.darty.com/accessoires/peripherique-souris/souris_gamers/logitech_g502_gaming_mouse_t1905104693094A_150040551.jpg);
+ background-size: cover;
+ background-position: top;
+}
+.card.six .video {
+ background: url(https://image.darty.com/accessoires/peripherique-souris/souris/logitech_mx_master_2s_t1705124321952A_120516140.jpg) no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+.card.sevent .screen {
+  background: url(https://image.darty.com/accessoires/peripherique-souris/souris_gamers/logitech_g502_gaming_mouse_t1905104693094A_150040551.jpg);
+ background-size: cover;
+ background-position: top;
+}
+.card.sevent .video {
+ background: url(https://image.darty.com/accessoires/peripherique-souris/souris/logitech_mx_master_2s_t1705124321952A_120516140.jpg) no-repeat;
+ background-size: cover;
+ background-position: center;
+}
+.card.eight .screen {
+  background: url(https://image.darty.com/accessoires/peripherique-souris/souris_gamers/logitech_g502_gaming_mouse_t1905104693094A_150040551.jpg);
+ background-size: cover;
+ background-position: top;
+}
+.card.eight .video {
+ background: url(https://image.darty.com/accessoires/peripherique-souris/souris/logitech_mx_master_2s_t1705124321952A_120516140.jpg) no-repeat;
+ background-size: cover;
+ background-position: center;
+
+}
+
+
+
+
+
+  @media (max-width:980px){
+    .container1{
+      grid-template: auto / repeat(3, 1fr)
+    }
+  }
+
+  @media (max-width:720px){
+    .container1{
+      grid-template: auto / repeat(2, 1fr)
+    }
+  }
+  @media (max-width:550px){
+    .container1{
+      grid-template: auto / repeat(1, 1fr)
+    }
+  }

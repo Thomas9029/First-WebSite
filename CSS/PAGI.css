@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+.Pagination_shop {
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: -25px;
+    
+}
+#page_button {
+    background-color: #e6a80b;
+    color: #131313;
+    border-radius: 20px;
+    padding: 10px 50px;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 40px;
+    
+
+}
+
+.center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
